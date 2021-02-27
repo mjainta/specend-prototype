@@ -25,14 +25,6 @@
                 @click="isInventoryModalActive = true" />
               <p>In the inventory you can view your specs. You can find out your profit for each card.</p>
             </div>
-
-            <b-modal
-                v-model="isInventoryModalActive"
-                has-modal-card
-                full-screen
-                :can-cancel="false">
-                <inventory></inventory>
-            </b-modal>
           </div>
           <div class="tile is-vertical box notification is-success">
             <p class="title">Import</p>
@@ -51,6 +43,14 @@
         </div>
       </div>
     </div>
+
+    <b-modal
+        v-model="isInventoryModalActive"
+        has-modal-card
+        full-screen
+        :can-cancel="false">
+        <inventory></inventory>
+    </b-modal>
   </div>
 </template>
 <script>
