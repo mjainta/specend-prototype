@@ -5,6 +5,8 @@
       </header>
       <section class="modal-card-body">
         <inv-order-import></inv-order-import>
+        <div class="box"></div>
+        <h4 class="title is-4">Current inventory</h4>
         <table class="table is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
                 <tr>
@@ -25,8 +27,8 @@
                   <td>{{ card.set }}</td>
                   <td>{{ card.foil }}</td>
                   <td>{{ card.condition }}</td>
-                  <td>{{ card.price_purchase }}</td>
-                  <td>{{ card.price_sell }}</td>
+                  <td>{{ currencyHelper.stringify(card.price_purchase) }}</td>
+                  <td>{{ currencyHelper.stringify(card.price_sell) }}</td>
                   <td>
                     <b-icon
                         icon="plus-circle-outline"

@@ -8,6 +8,10 @@ import App from './views/app.vue'
 
 window.specendData = require('./data.json');
 
+import currencyHelper from './helpers/currency-helper'
+Vue.prototype.currencyHelper = currencyHelper
+Vue.currencyHelper = currencyHelper
+
 Vue.use(Buefy)
 
 import Inventory from './views/inventory/main.vue'

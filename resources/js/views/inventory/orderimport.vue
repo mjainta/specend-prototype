@@ -12,7 +12,7 @@
           role="button"
           aria-controls="contentIdForA11y2"
         >
-          <strong>Pending Purchases / Sales</strong>
+          <strong>Pending Purchases / Sales ...</strong>
         </div>
       </template>
       <p class="panel-tabs">
@@ -36,7 +36,7 @@
                 <tr v-for="purchase in purchases" v-bind:key="purchase.id">
                   <td>{{ purchase.cards_number }}</td>
                   <td>{{ purchase.order_id }}</td>
-                  <td>{{ purchase.price }}</td>
+                  <td>{{ currencyHelper.stringify(purchase.price) }}</td>
                   <td>{{ purchase.seller }}</td>
                   <td>
                     <b-icon
@@ -61,7 +61,7 @@
                 <tr v-for="sale in sales" v-bind:key="sale.id">
                   <td>{{ sale.cards_number }}</td>
                   <td>{{ sale.order_id }}</td>
-                  <td>{{ sale.price }}</td>
+                  <td>{{ currencyHelper.stringify(sale.price) }}</td>
                   <td>{{ sale.buyer }}</td>
                   <td>
                     <b-icon
@@ -81,7 +81,7 @@
 export default {
   data() {
     return {
-      isOpen: true,
+      isOpen: false,
       activeTab: "purchases",
       purchases: window.specendData.orders.purchases,
       sales: window.specendData.orders.sales,
