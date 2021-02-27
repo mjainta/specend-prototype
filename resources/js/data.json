@@ -1,0 +1,68 @@
+{
+    "inventory": [
+        {
+            "id": 1,
+            "count": 4,
+            "name": "Counterspell",
+            "set": "Unlimited",
+            "foil": false,
+            "condition": "NM",
+            "price_purchase": 400,
+            "price_sell": 600
+        },
+        {
+            "id": 2,
+            "count": 1,
+            "name": "Saw it Coming",
+            "set": "Kaldheim",
+            "foil": false,
+            "condition": "NM",
+            "price_purchase": 10,
+            "price_sell": 50
+        },
+        {
+            "id": 3,
+            "count": 2,
+            "name": "Goldspan Dragon",
+            "set": "Kaldheim",
+            "foil": true,
+            "condition": "EX",
+            "price_purchase": 2000,
+            "price_sell": null
+        }
+    ],
+    "orders": {
+        "purchases": [
+            {
+                "id": 1,
+                "cards_number": 4,
+                "order_id": "order123TCGfeb",
+                "price": 2499,
+                "seller": "MTGShop24"
+            },
+            {
+                "id": 2,
+                "cards_number": 1,
+                "order_id": "order456TCGfeb",
+                "price": 400,
+                "seller": "JohnDoe"
+            }
+        ],
+        "sales": [
+            {
+                "id": 1,
+                "cards_number": 4,
+                "order_id": "sale2021-0123",
+                "price": 3566,
+                "buyer": "Customer12"
+            },
+            {
+                "id": 2,
+                "cards_number": 1,
+                "order_id": "sale2021-0124",
+                "price": 400,
+                "buyer": "CK-BL"
+            }
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #d4bf00;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$cyanLight: #ddf0ff;
+$purpleLight: #ebdfff;
+
+
+@import '~bulma/sass/utilities/all';
+
+// From buefy documentation, modified for buefy purple
+$primary: #9561e2;
+$primary-invert: findColorInvert($primary);
+$dark: #402f3f;
+$dark-invert: findColorInvert($dark);
+$success: #38c172;
+$siccess-invert: findColorInvert($success);
+
+// e.g is-white
+$colors: (
+  'white': ($white, $black),
+  'black': ($black, $white),
+  'light': ($light, $light-invert),
+  'dark': ($dark, $dark-invert),
+  'primary': ($primary, $primary-invert),
+  'info': ($info, $info-invert),
+  'success': ($success, $success-invert),
+  'warning': ($warning, $warning-invert),
+  'danger': ($danger, $danger-invert),
+  'autosell': ($cyanLight, $cyan),
+  'mkmArticleId': ($purpleLight, $purple)
+);
+
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$dimensions: (48);
+
+// Tables, customized to get better hovered color
+$table-row-hover-background-color: #f7f1ff;
+$table-striped-row-even-hover-background-color: #f7f1ff;
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
